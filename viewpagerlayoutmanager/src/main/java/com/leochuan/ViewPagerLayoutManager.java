@@ -687,7 +687,7 @@ public abstract class ViewPagerLayoutManager extends LinearLayoutManager {
             }
         }
 
-        currentFocusView.requestFocus();
+        if (currentFocusView != null) currentFocusView.requestFocus();
     }
 
     private boolean useMaxVisibleCount() {
